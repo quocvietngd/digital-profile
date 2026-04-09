@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Quốc Việt - Digital Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Trần Quốc Việt</h1>
+        <h2>CEO at JOYWORK</h2>
+        <img src="profile.jpg" alt="Profile Image" class="profile-image">
+        <div class="social-links">
+            <a href="https://www.facebook.com/yourprofile">Facebook</a>
+            <a href="https://zalo.me/yourprofile">Zalo</a>
+            <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
+        </div>
+        <button id="gift-button">Gift</button>
+    </div>
+    <script>
+        document.getElementById('gift-button').onclick = function() {
+            // Fireworks animation logic here
+            particlesJS.load('particles-js', 'particles.json', function() {
+                console.log('callback - particles.js config loaded');
+            });
+        };
+    </script>
+    <div id="particles-js"></div>
+</body>
+</html>
